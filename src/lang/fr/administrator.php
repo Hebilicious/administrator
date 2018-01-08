@@ -32,8 +32,8 @@ return array(
     'backtosite'        => 'Retour au site',
     'logout'            => 'Déconnexion',
 
-    'previous' => 'préc',
-    'next'     => 'suiv',
+    'previous' => 'Précedent',
+    'next'     => 'Suivant',
 
     'close'  => 'Annuler',
     'delete' => 'Supprimer',
@@ -44,6 +44,9 @@ return array(
     'active'  => 'Juste un moment...',
     'success' => 'Succès !',
     'error'   => 'Une erreur est apparue durant l\'opération',
+
+    'select_all'   => 'Tout sélectionner',
+    'delete_all'   => 'Tout supprimer',
 
     'valid_columns'            => "Vous devez fournir un tableau de 'columns' valide dans chaque configuration de modèle",
     'valid_title'              => "Vous devez fournir des variables 'title' et 'single' valides dans chaque configuration de modèle",
