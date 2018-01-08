@@ -23,7 +23,7 @@
 								text: '<?php echo trans('administrator::administrator.new') ?> ' + modelSingle()"></a>
 			<!-- /ko -->
 
-			<input id="filter-btn-success" type="button" value="筛选" class="btn btn-w-m btn-success" />
+			<input id="filter-btn-success" type="button" value="<?php echo trans('administrator::administrator.filters') ?>" class="btn btn-w-m btn-success" />
 
 
 		</div>
