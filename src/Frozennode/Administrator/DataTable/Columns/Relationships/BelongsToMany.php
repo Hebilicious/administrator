@@ -35,7 +35,7 @@ class BelongsToMany extends Relationship
         $int_alias    = $columnName.'_'.$int_table;
         $column1      = explode('.', $relationship->getForeignKey());
         $column1      = $column1[1];
-        $column2      = explode('.', $relationship->getOtherKey());
+        $column2      = explode('.', $relationship->getOwnerKey());
         $column2      = $column2[1];
         $joins .= ' LEFT JOIN '.$int_table.' AS '.$int_alias.' ON '.$int_alias.'.'.$column1.' = '.$field_table.'.'.$model->getKeyName()
                 .' LEFT JOIN '.$other_table.' AS '.$other_alias.' ON '.$other_alias.'.'.$other_key.' = '.$int_alias.'.'.$column2;
