@@ -300,7 +300,7 @@
 		<div class="custom_buttons">
 			<!-- ko foreach: actions -->
 				<!-- ko if: has_permission && $root.actionPermissions[action_name] !== false -->
-					<input type="button" class="btn btn-block btn-outline btn-primary" data-bind="click: function(){$root.customAction(true, action_name, messages, confirmation)}, value: title,
+					<input type="button" class="btn btn-block btn-outline btn-warning" data-bind="click: function(){$root.customAction(true, action_name, messages, confirmation)}, value: title,
 																	attr: {disabled: $root.freezeForm() || $root.freezeActions()}" />
 				<!-- /ko -->
 			<!-- /ko -->
@@ -317,6 +317,12 @@
 			<!-- ko if: actionPermissions.update -->
 				<input type="button" class="btn btn-block btn-primary" value="<?php echo trans('administrator::administrator.save') ?>"
 					data-bind="click: function() { saveItem(true) }, attr: {disabled: $root.freezeForm() || $root.freezeActions()}" />
+			<!-- /ko -->
+
+
+			<!-- ko if: actionPermissions.delete -->
+				<input type="button" class="btn btn-block btn-danger" value="<?php echo trans('administrator::administrator.delete') ?>"
+					data-bind="click: deleteItem, attr: {disabled: $root.freezeForm() || $root.freezeActions()}" />
 			<!-- /ko -->
 		<!-- /ko -->
 

@@ -3,7 +3,7 @@
  */
 
 #admin_page #content div.table_container table.results tr.result {
-    cursor: text;
+    cursor: pointer;
 }
 #admin_page #content div.table_container table.results tr.selected {
     background: #EDEEEF;
